@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --accent-color: rgba(96, 165, 250, 1);
+  --body-text-font-family: "Inter", Helvetica;
+  --body-text-font-size: 16px;
+  --body-text-font-style: normal;
+  --body-text-font-weight: 400;
+  --body-text-letter-spacing: 0px;
+  --body-text-line-height: normal;
+  --heading-1-font-family: "Inter", Helvetica;
+  --heading-1-font-size: 40px;
+  --heading-1-font-style: normal;
+  --heading-1-font-weight: 400;
+  --heading-1-letter-spacing: 0px;
+  --heading-1-line-height: normal;
+  --heading-2-font-family: "Inter", Helvetica;
+  --heading-2-font-size: 32px;
+  --heading-2-font-style: normal;
+  --heading-2-font-weight: 400;
+  --heading-2-letter-spacing: 0px;
+  --heading-2-line-height: normal;
+  --heading-3-font-family: "Inter", Helvetica;
+  --heading-3-font-size: 24px;
+  --heading-3-font-style: normal;
+  --heading-3-font-weight: 400;
+  --heading-3-letter-spacing: 0px;
+  --heading-3-line-height: normal;
+  --heading-4-font-family: "Inter", Helvetica;
+  --heading-4-font-size: 20px;
+  --heading-4-font-style: normal;
+  --heading-4-font-weight: 400;
+  --heading-4-letter-spacing: 0px;
+  --heading-4-line-height: normal;
+  --primary-text-dark-navy: rgba(31, 42, 55, 1);
+  --primaryblue: rgba(58, 141, 222, 1);
+  --primarygreen: rgba(63, 185, 132, 1);
+  --scondary-light-green: rgba(238, 248, 243, 1);
+  --secondary-light-blue: rgba(242, 247, 252, 1);
+  --secondary-text-muted-grey: rgba(107, 114, 128, 1);
+  --UI-text-font-family: "Inter", Helvetica;
+  --UI-text-font-size: 16px;
+  --UI-text-font-style: normal;
+  --UI-text-font-weight: 400;
+  --UI-text-letter-spacing: 0px;
+  --UI-text-line-height: normal;
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}

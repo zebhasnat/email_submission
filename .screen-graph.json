@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/MySite/MySite.tsx",
+      "label": "MySite",
+      "routes": [
+        "/*",
+        "/mysite"
+      ],
+      "dataModelId": "4:39",
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/SubmittedForm/SubmittedForm.tsx",
+      "label": "SubmittedForm",
+      "routes": [
+        "/submitted-form"
+      ],
+      "dataModelId": "27:128"
+    },
+    {
+      "id": "src/screens/Contact/Contact.tsx",
+      "label": "Contact",
+      "routes": [
+        "/contact"
+      ],
+      "dataModelId": "14:72"
+    }
+  ],
+  "edges": [
+    {
+      "id": "src/screens/MySite/MySite.tsx:54:6-to-src/screens/Contact/Contact.tsx",
+      "source": "src/screens/MySite/MySite.tsx",
+      "target": "src/screens/Contact/Contact.tsx",
+      "data": {
+        "viaRoute": "/contact",
+        "trigger": {
+          "element": "<Link\n        className=\"w-[399px] items-center justify-center gap-2.5 p-2.5 top-[357px] left-[71px] flex absolute bg-accent-color\"\n        to=\"/contact\"\n        aria-label=\"Book a free consultation\"\n      >\n        <span className=\"relative w-fit mt-[-1.00px] font-heading-2 font-[number:var(--heading-2-font-weight)] text-white text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]\">\n          Book a free consultation\n        </span>\n      </Link>",
+          "line": 54,
+          "endLine": 62,
+          "column": 6,
+          "endColumn": 13,
+          "sourceFile": "src/screens/MySite/MySite.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/MySite/MySite.tsx:125:8-to-src/screens/Contact/Contact.tsx",
+      "source": "src/screens/MySite/MySite.tsx",
+      "target": "src/screens/Contact/Contact.tsx",
+      "data": {
+        "viaRoute": "/contact",
+        "trigger": {
+          "element": "<Link\n          className=\"block mt-[50px] mb-[30px] ml-[148px] w-[421px] h-[87px] bg-accent-color flex items-center justify-center\"\n          to=\"/contact\"\n          aria-label=\"Book a free consultation\"\n        >\n          <span className=\"font-heading-2 font-[number:var(--heading-2-font-weight)] text-white text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]\">\n            Book a free consultation\n          </span>\n        </Link>",
+          "line": 125,
+          "endLine": 133,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src/screens/MySite/MySite.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SubmittedForm/SubmittedForm.tsx:26:6-to-src/screens/MySite/MySite.tsx",
+      "source": "src/screens/SubmittedForm/SubmittedForm.tsx",
+      "target": "src/screens/MySite/MySite.tsx",
+      "data": {
+        "viaRoute": "/mysite",
+        "trigger": {
+          "element": "<Link to=\"/mysite\" aria-label=\"Return to home page\">\n        <img\n          className=\"absolute top-2.5 left-[350px] w-[61px] h-14 object-cover block\"\n          alt=\"Home logo\"\n          src=\"https://c.animaapp.com/7hQguZgO/img/rectangle-20-1@2x.png\"\n        />\n      </Link>",
+          "line": 26,
+          "endLine": 32,
+          "column": 6,
+          "endColumn": 13,
+          "sourceFile": "src/screens/SubmittedForm/SubmittedForm.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/Contact/Contact.tsx:46:6-to-src/screens/SubmittedForm/SubmittedForm.tsx",
+      "source": "src/screens/Contact/Contact.tsx",
+      "target": "src/screens/SubmittedForm/SubmittedForm.tsx",
+      "data": {
+        "viaRoute": "/submitted-form",
+        "trigger": {
+          "element": "navigate(\"/submitted-form\")",
+          "line": 46,
+          "endLine": 46,
+          "column": 6,
+          "endColumn": 33,
+          "sourceFile": "src/screens/Contact/Contact.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/Contact/Contact.tsx:67:8-to-src/screens/MySite/MySite.tsx",
+      "source": "src/screens/Contact/Contact.tsx",
+      "target": "src/screens/MySite/MySite.tsx",
+      "data": {
+        "viaRoute": "/mysite",
+        "trigger": {
+          "element": "<Link to=\"/mysite\" aria-label=\"Go to home page\">\n          <img\n            className=\"absolute top-2.5 left-[350px] w-[61px] h-14 object-cover block\"\n            alt=\"Home logo\"\n            src=\"https://c.animaapp.com/7hQguZgO/img/rectangle-20-1@2x.png\"\n          />\n        </Link>",
+          "line": 67,
+          "endLine": 73,
+          "column": 8,
+          "endColumn": 15,
+          "sourceFile": "src/screens/Contact/Contact.tsx"
+        }
+      }
+    }
+  ]
+}
